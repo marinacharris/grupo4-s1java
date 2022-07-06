@@ -29,5 +29,6 @@ public class Calcular {
         Calcular obj1 = new Calcular();
         obj1.capturaDatos();
         System.out.println(obj1.suma(20, 15)); 
+        
     }
 }
