@@ -7,5 +7,8 @@ public class MascotaHe {
     protected int edad;
     public void dormir(){
         System.out.println("La mascota duerme ZZZZ ");
-    }  
+    } 
+    public void sonidoAnimal(){
+        System.out.println("Los animales hacen un sonido");
+    } 
 }

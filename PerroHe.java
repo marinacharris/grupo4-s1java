@@ -10,6 +10,7 @@ public class PerroHe extends MascotaHe {
         return tamano;
     }
     public void sonidoAnimal(){
+        super.sonidoAnimal();
         System.out.println("El perro hace guau");
     }
 }
