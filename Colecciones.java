@@ -1,5 +1,7 @@
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.HashSet;
 import java.util.LinkedList;
 
@@ -82,7 +84,38 @@ public class Colecciones {
             System.out.println(i);
         }
 
+        //HashMap
+        Map<String,String> colores = new HashMap<String,String>();
+        colores.put("green", "verde");
+        colores.put("red", "rojo");
+        colores.put("yellow", "amarillo");
+        colores.put("blue", "azul");
+        colores.put("black", "negro");
+        System.out.println();
+        //recorriendo un hashMap
+        //recorrer las llaves:
+        for(String i: colores.keySet()) {
+            System.out.println(i);
+        }
+        System.out.println();
+        for(String i: colores.values()) {
+            System.out.println(i);
+        }
+        System.out.println();
+        for(String i: colores.keySet()) {
+            System.out.println(i + " en español es: "+ colores.get(i));
+        }
 
+        Map<CarroCol,String> map1 = new HashMap<CarroCol,String>();
+        map1.put(new CarroCol("Mazda"), "Plateado" );
+        map1.put(new CarroCol("Nissan"),"Rojo");
+        map1.put(new CarroCol("Chevrolet"), "Blamco");  
+
+        for (CarroCol i : map1.keySet()) {
+            System.out.println("El carro "+ i.getMarca()+ " es de color "+map1.get(i));
+        }
+        System.out.println(map1);
+        System.out.println(colores);
 
         
 
